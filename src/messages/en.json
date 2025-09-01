@@ -1,0 +1,207 @@
+{
+  "navigation": {
+    "home": "Home",
+    "book": "Book",
+    "rentals": "Rentals",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Van Rental in Hamburg",
+      "subtitle": "Experience luxury and comfort with our Mercedes van fleet. Premium van rental service with electric and hybrid options.",
+      "cta": "Browse Fleet",
+      "secondaryCta": "View Pricing",
+      "scroll": "Scroll to explore"
+    },
+    "features": {
+      "title": "Why Choose HanseHaul",
+      "subtitle": "Premium Mercedes vans with cutting-edge technology and luxury comfort",
+      "premium": {
+        "title": "Premium Quality",
+        "description": "Only the finest Mercedes vans with luxury interiors and cutting-edge technology."
+      },
+      "electric": {
+        "title": "Electric & Hybrid",
+        "description": "Environmentally conscious with zero-emission electric and efficient hybrid options."
+      },
+      "service": {
+        "title": "24/7 Service",
+        "description": "Round-the-clock support and flexible booking options for your convenience."
+      },
+      "location": {
+        "title": "Hamburg Based",
+        "description": "Convenient pickup and delivery throughout Hamburg with premium service."
+      }
+    },
+    "cta": {
+      "title": "Ready for Your Next Journey?",
+      "description": "Book now your premium van and experience luxury on wheels",
+      "primaryButton": "Book Now",
+      "secondaryButton": "Contact Us"
+    }
+  },
+  "booking": {
+    "title": "Book Your Van",
+    "subtitle": "Configure and book your Mercedes van with premium options",
+    "vanSelection": "Select Your Van",
+    "duration": "Rental Duration",
+    "insurance": "Insurance Options",
+    "additionalServices": "Additional Services",
+    "driver": "Professional Driver",
+    "helpers": "Moving Helpers",
+    "bookNow": "Book Now"
+  },
+  "vehicle": {
+    "details": {
+      "title": "Vehicle Details",
+      "specifications": "Specifications",
+      "features": "Features",
+      "pricing": "Pricing",
+      "availability": "Availability"
+    },
+    "specs": {
+      "length": "Length",
+      "width": "Width",
+      "height": "Height",
+      "weight": "Weight",
+      "engine": "Engine",
+      "power": "Power",
+      "range": "Range"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "hourly": "Hourly Rate",
+      "daily": "Daily Rate",
+      "weekly": "Weekly Rate"
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "step1": "Date & Time",
+    "step2": "Options",
+    "step3": "Contact",
+    "step4": "Confirmation",
+    "dateTime": {
+      "title": "Select Date and Time",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "duration": "Duration"
+    },
+    "options": {
+      "title": "Additional Options",
+      "insurance": {
+        "title": "Insurance",
+        "description": "Choose your insurance option"
+      },
+      "driver": {
+        "title": "Driver",
+        "description": "Professional driver included"
+      },
+      "helper": {
+        "title": "Helper",
+        "description": "Additional help for moving"
+      }
+    },
+    "contact": {
+      "title": "Contact Information",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "pickupLocation": "Pickup Location",
+      "returnLocation": "Return Location"
+    },
+    "summary": {
+      "title": "Booking Summary",
+      "vehicle": "Vehicle",
+      "duration": "Duration",
+      "basePrice": "Base Price",
+      "insurance": "Insurance",
+      "driver": "Driver",
+      "helper": "Helper",
+      "total": "Total Price",
+      "confirm": "Confirm Booking"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent and fair pricing",
+    "hourly": "Hourly Rate",
+    "daily": "Daily Rate",
+    "weekly": "Weekly Rate",
+    "insurance": "Insurance",
+    "driver": "Driver",
+    "helper": "Helper"
+  },
+  "rentals": {
+    "hamburg": {
+      "title": "Rentals in Hamburg",
+      "subtitle": "Premium van service in all Hamburg districts",
+      "districts": "Districts",
+      "pickupAddress": "Pickup Address: Olewish 4, 22177 Hamburg"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "location": {
+        "question": "Where can I pick up the van?",
+        "answer": "All vans are picked up and returned at Olewish 4, 22177 Hamburg."
+      },
+      "insurance": {
+        "question": "Is insurance included in the price?",
+        "answer": "Basic insurance is included. Additional insurance options are available."
+      },
+      "driver": {
+        "question": "Can I rent a driver?",
+        "answer": "Yes, professional drivers are available for an additional fee."
+      },
+      "cancellation": {
+        "question": "Can I cancel my booking?",
+        "answer": "Cancellations are free up to 24 hours before pickup."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We are here for you",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "next": "Next",
+    "back": "Back",
+    "close": "Close",
+    "select": "Select",
+    "required": "Required",
+    "optional": "Optional",
+    "euro": "€",
+    "perHour": "/ hour",
+    "perDay": "/ day",
+    "perWeek": "/ week"
+  },
+  "errors": {
+    "location": "Only available in Hamburg",
+    "locationMessage": "Service is only available in Hamburg. Please select a Hamburg location.",
+    "vehicleNotFound": "Vehicle not found",
+    "bookingError": "Booking error",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number"
+  }
+}

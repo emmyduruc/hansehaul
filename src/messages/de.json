@@ -1,0 +1,207 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "book": "Buchen",
+    "rentals": "Vermietung",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Van Vermietung in Hamburg",
+      "subtitle": "Erleben Sie Luxus und Komfort mit unserer Mercedes Van-Flotte. Premium Van-Vermietung mit elektrischen und Hybrid-Optionen.",
+      "cta": "Flotte durchsuchen",
+      "secondaryCta": "Preise ansehen",
+      "scroll": "Scrollen Sie zum Erkunden"
+    },
+    "features": {
+      "title": "Warum HanseHaul wählen?",
+      "subtitle": "Premium Mercedes Vans mit modernster Technologie und Luxus-Komfort",
+      "premium": {
+        "title": "Premium Qualität",
+        "description": "Nur die feinsten Mercedes Vans mit Luxus-Innenräumen und modernster Technologie."
+      },
+      "electric": {
+        "title": "Elektrisch & Hybrid",
+        "description": "Umweltbewusst mit emissionsfreien elektrischen und effizienten Hybrid-Optionen."
+      },
+      "service": {
+        "title": "24/7 Service",
+        "description": "Rund-um-die-Uhr-Support und flexible Buchungsoptionen für Ihren Komfort."
+      },
+      "location": {
+        "title": "Hamburg-basiert",
+        "description": "Bequeme Abholung und Lieferung in ganz Hamburg mit Premium-Service."
+      }
+    },
+    "cta": {
+      "title": "Bereit für Ihre nächste Reise?",
+      "description": "Buchen Sie jetzt Ihren Premium Van und erleben Sie Luxus auf Rädern",
+      "primaryButton": "Jetzt buchen",
+      "secondaryButton": "Kontaktieren Sie uns"
+    }
+  },
+  "booking": {
+    "title": "Ihren Van buchen",
+    "subtitle": "Konfigurieren und buchen Sie Ihren Mercedes Van mit Premium-Optionen",
+    "vanSelection": "Wählen Sie Ihren Van",
+    "duration": "Mietdauer",
+    "insurance": "Versicherungsoptionen",
+    "additionalServices": "Zusätzliche Dienstleistungen",
+    "driver": "Professioneller Fahrer",
+    "helpers": "Umzugshilfe",
+    "bookNow": "Jetzt buchen"
+  },
+  "vehicle": {
+    "details": {
+      "title": "Fahrzeug Details",
+      "specifications": "Spezifikationen",
+      "features": "Ausstattung",
+      "pricing": "Preise",
+      "availability": "Verfügbarkeit"
+    },
+    "specs": {
+      "length": "Länge",
+      "width": "Breite",
+      "height": "Höhe",
+      "weight": "Gewicht",
+      "engine": "Motor",
+      "power": "Leistung",
+      "range": "Reichweite"
+    },
+    "pricing": {
+      "title": "Preise",
+      "hourly": "Stundensatz",
+      "daily": "Tagessatz",
+      "weekly": "Wochensatz"
+    }
+  },
+  "booking": {
+    "title": "Buchung",
+    "step1": "Datum & Zeit",
+    "step2": "Optionen",
+    "step3": "Kontakt",
+    "step4": "Bestätigung",
+    "dateTime": {
+      "title": "Wählen Sie Datum und Zeit",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "startTime": "Startzeit",
+      "endTime": "Endzeit",
+      "duration": "Dauer"
+    },
+    "options": {
+      "title": "Zusätzliche Optionen",
+      "insurance": {
+        "title": "Versicherung",
+        "description": "Wählen Sie Ihre Versicherungsoption"
+      },
+      "driver": {
+        "title": "Fahrer",
+        "description": "Professioneller Fahrer inklusive"
+      },
+      "helper": {
+        "title": "Helfer",
+        "description": "Zusätzliche Hilfe beim Umzug"
+      }
+    },
+    "contact": {
+      "title": "Kontaktdaten",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "pickupLocation": "Abholort",
+      "returnLocation": "Rückgabeort"
+    },
+    "summary": {
+      "title": "Buchungsübersicht",
+      "vehicle": "Fahrzeug",
+      "duration": "Dauer",
+      "basePrice": "Grundpreis",
+      "insurance": "Versicherung",
+      "driver": "Fahrer",
+      "helper": "Helfer",
+      "total": "Gesamtpreis",
+      "confirm": "Buchung bestätigen"
+    }
+  },
+  "pricing": {
+    "title": "Preise",
+    "subtitle": "Transparente und faire Preise",
+    "hourly": "Stundensatz",
+    "daily": "Tagessatz",
+    "weekly": "Wochensatz",
+    "insurance": "Versicherung",
+    "driver": "Fahrer",
+    "helper": "Helfer"
+  },
+  "rentals": {
+    "hamburg": {
+      "title": "Vermietung in Hamburg",
+      "subtitle": "Premium Van-Service in allen Hamburger Bezirken",
+      "districts": "Bezirke",
+      "pickupAddress": "Abholadresse: Olewish 4, 22177 Hamburg"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": {
+      "location": {
+        "question": "Wo kann ich den Van abholen?",
+        "answer": "Alle Vans werden in Olewish 4, 22177 Hamburg abgeholt und zurückgegeben."
+      },
+      "insurance": {
+        "question": "Ist eine Versicherung im Preis inbegriffen?",
+        "answer": "Grundversicherung ist inklusive. Zusätzliche Versicherungsoptionen sind verfügbar."
+      },
+      "driver": {
+        "question": "Kann ich einen Fahrer mieten?",
+        "answer": "Ja, professionelle Fahrer sind gegen Aufpreis verfügbar."
+      },
+      "cancellation": {
+        "question": "Kann ich meine Buchung stornieren?",
+        "answer": "Stornierungen sind bis 24 Stunden vor Abholung kostenlos möglich."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind für Sie da",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Nachricht senden"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "next": "Weiter",
+    "back": "Zurück",
+    "close": "Schließen",
+    "select": "Auswählen",
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "euro": "€",
+    "perHour": "/ Stunde",
+    "perDay": "/ Tag",
+    "perWeek": "/ Woche"
+  },
+  "errors": {
+    "location": "Nur in Hamburg verfügbar",
+    "locationMessage": "Der Service ist nur in Hamburg verfügbar. Bitte wählen Sie einen Hamburger Standort.",
+    "vehicleNotFound": "Fahrzeug nicht gefunden",
+    "bookingError": "Fehler bei der Buchung",
+    "required": "Dieses Feld ist erforderlich",
+    "invalidEmail": "Ungültige E-Mail-Adresse",
+    "invalidPhone": "Ungültige Telefonnummer"
+  }
+}
