@@ -94,15 +94,15 @@ export default function BookPage() {
   ];
 
   const durationOptions = [
-    { id: 'hourly', label: 'Hourly', price: '€85-120', description: 'Flexible hourly rental' },
-    { id: 'daily', label: 'Daily', price: '€450-600', description: '24-hour rental period' },
-    { id: 'weekly', label: 'Weekly', price: '€2,800-3,500', description: '7-day rental period' }
+    { id: 'hourly', label: t('book.duration.hourly'), price: t('book.duration.hourlyPrice'), description: t('book.duration.hourlyDescription') },
+    { id: 'daily', label: t('book.duration.daily'), price: t('book.duration.dailyPrice'), description: t('book.duration.dailyDescription') },
+    { id: 'weekly', label: t('book.duration.weekly'), price: t('book.duration.weeklyPrice'), description: t('book.duration.weeklyDescription') }
   ];
 
   const insuranceOptions = [
-    { id: 'basic', label: 'Basic Coverage', price: '€15', period: '/day', description: 'Standard protection for your rental' },
-    { id: 'premium', label: 'Premium Coverage', price: '€25', period: '/day', description: 'Comprehensive protection with roadside assistance' },
-    { id: 'full', label: 'Full Coverage', price: '€35', period: '/day', description: 'Maximum protection including personal items' }
+    { id: 'basic', label: t('book.insurance.basic.label'), price: t('book.insurance.basic.price'), period: t('book.insurance.basic.period'), description: t('book.insurance.basic.description') },
+    { id: 'premium', label: t('book.insurance.premium.label'), price: t('book.insurance.premium.price'), period: t('book.insurance.premium.period'), description: t('book.insurance.premium.description') },
+    { id: 'full', label: t('book.insurance.full.label'), price: t('book.insurance.full.price'), period: t('book.insurance.full.period'), description: t('book.insurance.full.description') }
   ];
 
   const selectedVanData = vans.find(van => van.id === selectedVan);
@@ -130,10 +130,10 @@ export default function BookPage() {
             className="text-center"
           >
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-text mb-6">
-              Book Your Premium Van
+              {t('book.title')}
             </h1>
             <p className="text-xl lg:text-2xl text-text-secondary max-w-4xl mx-auto font-light">
-              Configure and book your Mercedes van with premium options
+              {t('book.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -216,15 +216,15 @@ export default function BookPage() {
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="text-center">
                       <div className="text-lg font-bold text-text">{selectedVanData?.specs.range}</div>
-                      <div className="text-sm text-text-secondary">Range</div>
+                      <div className="text-sm text-text-secondary">{t('book.specs.range')}</div>
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-text">{selectedVanData?.specs.capacity}</div>
-                      <div className="text-sm text-text-secondary">Capacity</div>
+                      <div className="text-sm text-text-secondary">{t('book.specs.capacity')}</div>
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-text">{selectedVanData?.specs.power}</div>
-                      <div className="text-sm text-text-secondary">Power</div>
+                      <div className="text-sm text-text-secondary">{t('book.specs.power')}</div>
                     </div>
                   </div>
                   
@@ -251,7 +251,7 @@ export default function BookPage() {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="bg-background-secondary p-6 rounded-lg"
               >
-                <h3 className="text-2xl font-bold text-text mb-6">Select Your Van</h3>
+                <h3 className="text-2xl font-bold text-text mb-6">{t('book.vanSelection.title')}</h3>
                 <div className="space-y-4">
                   {vans.map((van) => (
                     <label
@@ -302,7 +302,7 @@ export default function BookPage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="bg-background-secondary p-6 rounded-lg"
               >
-                <h3 className="text-2xl font-bold text-text mb-6">Rental Duration</h3>
+                <h3 className="text-2xl font-bold text-text mb-6">{t('book.duration.title')}</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {durationOptions.map((option) => (
                     <label
@@ -338,7 +338,7 @@ export default function BookPage() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="bg-background-secondary p-6 rounded-lg"
               >
-                <h3 className="text-2xl font-bold text-text mb-6">Insurance Options</h3>
+                <h3 className="text-2xl font-bold text-text mb-6">{t('book.insurance.title')}</h3>
                 <div className="space-y-4">
                   {insuranceOptions.map((option) => (
                     <label
@@ -379,7 +379,7 @@ export default function BookPage() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="bg-background-secondary p-6 rounded-lg"
               >
-                <h3 className="text-2xl font-bold text-text mb-6">Additional Services</h3>
+                <h3 className="text-2xl font-bold text-text mb-6">{t('book.services.title')}</h3>
                 
                 {/* Driver Service */}
                 <div className="flex items-center justify-between p-4 border border-background-tertiary rounded-lg mb-4">
@@ -391,13 +391,13 @@ export default function BookPage() {
                       className="w-5 h-5 text-accent"
                     />
                     <div>
-                      <div className="font-semibold text-text">Professional Driver</div>
-                      <div className="text-text-secondary">Licensed driver for your convenience</div>
+                      <div className="font-semibold text-text">{t('book.services.driver.title')}</div>
+                      <div className="text-text-secondary">{t('book.services.driver.description')}</div>
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xl font-bold text-text">€25</div>
-                    <div className="text-sm text-text-secondary">/hour</div>
+                    <div className="text-xl font-bold text-text">{t('book.services.driver.price')}</div>
+                    <div className="text-sm text-text-secondary">{t('book.services.driver.period')}</div>
                   </div>
                 </div>
 
@@ -405,12 +405,12 @@ export default function BookPage() {
                 <div className="p-4 border border-background-tertiary rounded-lg">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <div className="font-semibold text-text">Moving Helpers</div>
-                      <div className="text-text-secondary">Additional assistance for moving tasks</div>
+                      <div className="font-semibold text-text">{t('book.services.helper.title')}</div>
+                      <div className="text-text-secondary">{t('book.services.helper.description')}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-xl font-bold text-text">€10</div>
-                      <div className="text-sm text-text-secondary">/person/hour</div>
+                                          <div className="text-xl font-bold text-text">{t('book.services.helper.price')}</div>
+                    <div className="text-sm text-text-secondary">{t('book.services.helper.period')}</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -429,7 +429,7 @@ export default function BookPage() {
                     >
                       +
                     </button>
-                    <span className="text-text-secondary ml-2">helpers</span>
+                    <span className="text-text-secondary ml-2">{t('book.services.helper.label')}</span>
                   </div>
                 </div>
               </motion.div>
@@ -450,13 +450,13 @@ export default function BookPage() {
                     {selectedDuration === 'hourly' ? '/hour' : selectedDuration === 'daily' ? '/day' : '/week'}
                   </span>
                 </div>
-                <div className="text-sm text-text-secondary">Total price with selected options</div>
+                <div className="text-sm text-text-secondary">{t('book.summary.totalDescription')}</div>
               </div>
               
               {/* Pickup Location */}
               <div className="flex items-center space-x-2 text-text-secondary">
                 <MapPin className="w-5 h-5" />
-                <span>Olewish 4, 22177 Hamburg</span>
+                <span>{t('book.pickup.address')}</span>
               </div>
             </div>
 
@@ -465,7 +465,7 @@ export default function BookPage() {
               whileTap={{ scale: 0.98 }}
             >
               <button className="px-12 py-4 bg-accent text-background font-semibold rounded-none text-lg hover:bg-accent/90 transition-colors duration-300">
-                Book Now
+                {t('book.summary.confirm')}
                 <ArrowRight className="ml-2 w-5 h-5 inline" />
               </button>
             </motion.div>

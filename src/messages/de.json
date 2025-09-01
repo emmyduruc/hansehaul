@@ -8,112 +8,130 @@
   },
   "home": {
     "hero": {
-      "title": "Premium Van Vermietung in Hamburg",
-      "subtitle": "Erleben Sie Luxus und Komfort mit unserer Mercedes Van-Flotte. Premium Van-Vermietung mit elektrischen und Hybrid-Optionen.",
-      "cta": "Flotte durchsuchen",
-      "secondaryCta": "Preise ansehen",
-      "scroll": "Scrollen Sie zum Erkunden"
+      "title": "Professioneller Transporter-Verleih für Umzug & Transport",
+      "subtitle": "Zuverlässige, geräumige Transporter für Ihre Umzugsbedürfnisse, Lieferungen und Transportdienstleistungen in Hamburg. Schnell, erschwinglich und professionell.",
+      "cta": "Unsere Transporter ansehen",
+      "secondaryCta": "Angebot einholen"
     },
-    "features": {
-      "title": "Warum HanseHaul wählen?",
-      "subtitle": "Premium Mercedes Vans mit modernster Technologie und Luxus-Komfort",
-      "premium": {
-        "title": "Premium Qualität",
-        "description": "Nur die feinsten Mercedes Vans mit Luxus-Innenräumen und modernster Technologie."
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "subtitle": "Einfacher, transparenter Prozess von der Buchung bis zur Fertigstellung",
+      "step1": {
+        "title": "Transporter buchen",
+        "description": "Wählen Sie Ihren Transporter, wählen Sie Termine und fügen Sie zusätzliche Dienstleistungen wie Fahrer oder Helfer hinzu"
       },
-      "electric": {
-        "title": "Elektrisch & Hybrid",
-        "description": "Umweltbewusst mit emissionsfreien elektrischen und effizienten Hybrid-Optionen."
+      "step2": {
+        "title": "Abholung & Einrichtung",
+        "description": "Holen Sie Ihren Transporter an unserem Hamburger Standort mit vollständiger Einweisung und Ausrüstungsprüfung ab"
       },
-      "service": {
-        "title": "24/7 Service",
-        "description": "Rund-um-die-Uhr-Support und flexible Buchungsoptionen für Ihren Komfort."
+      "step3": {
+        "title": "Aufgabe erledigen",
+        "description": "Nutzen Sie den Transporter für Ihre Umzugs-, Liefer- oder Transportbedürfnisse mit vollständiger Unterstützung"
       },
-      "location": {
-        "title": "Hamburg-basiert",
-        "description": "Bequeme Abholung und Lieferung in ganz Hamburg mit Premium-Service."
-      }
+      "step4": {
+        "title": "Rückgabe & Fertig",
+        "description": "Geben Sie den Transporter zurück und wir übernehmen alle Formalitäten und die Finalisierung"
+      },
+      "cta": "Buchung starten"
     },
     "cta": {
-      "title": "Bereit für Ihre nächste Reise?",
-      "description": "Buchen Sie jetzt Ihren Premium Van und erleben Sie Luxus auf Rädern",
+      "title": "Bereit für den Umzug?",
+      "description": "Erhalten Sie sofortige Preise und buchen Sie Ihren Transporter noch heute. Professioneller Service garantiert.",
       "primaryButton": "Jetzt buchen",
       "secondaryButton": "Kontaktieren Sie uns"
     }
   },
-  "booking": {
-    "title": "Ihren Van buchen",
-    "subtitle": "Konfigurieren und buchen Sie Ihren Mercedes Van mit Premium-Optionen",
-    "vanSelection": "Wählen Sie Ihren Van",
-    "duration": "Mietdauer",
-    "insurance": "Versicherungsoptionen",
-    "additionalServices": "Zusätzliche Dienstleistungen",
-    "driver": "Professioneller Fahrer",
-    "helpers": "Umzugshilfe",
-    "bookNow": "Jetzt buchen",
-    "totalPrice": "Gesamtpreis mit ausgewählten Optionen",
-    "pickupLocation": "Olewish 4, 22177 Hamburg"
-  },
-  "vehicle": {
-    "details": {
-      "title": "Fahrzeug Details",
-      "specifications": "Spezifikationen",
-      "features": "Ausstattung",
-      "pricing": "Preise",
-      "availability": "Verfügbarkeit"
+  "transporters": {
+    "hero": {
+      "title": "Unsere Premium Transporter",
+      "subtitle": "Erleben Sie Luxus und Innovation mit unserer Mercedes Transporter-Flotte. Jedes Fahrzeug ist darauf ausgelegt, den ultimativen Komfort, die Leistung und Nachhaltigkeit zu bieten.",
+      "cta": "Flotte erkunden"
+    },
+    "grid": {
+      "title": "Wählen Sie Ihren perfekten Transporter",
+      "subtitle": "Von elektrisch bis hybrid bietet jeder Transporter einzigartige Funktionen und Fähigkeiten"
     },
     "specs": {
-      "length": "Länge",
-      "width": "Breite",
-      "height": "Höhe",
-      "weight": "Gewicht",
-      "engine": "Motor",
+      "range": "Reichweite",
+      "capacity": "Kapazität",
       "power": "Leistung",
-      "range": "Reichweite"
+      "acceleration": "Beschleunigung"
     },
-    "pricing": {
-      "title": "Preise",
-      "hourly": "Stundensatz",
-      "daily": "Tagessatz",
-      "weekly": "Wochensatz"
+    "sections": {
+      "keyFeatures": "Hauptfunktionen",
+      "highlights": "Highlights"
+    },
+    "cta": {
+      "bookVan": "Diesen Transporter buchen",
+      "bookNow": "Jetzt buchen",
+      "contactUs": "Kontaktieren Sie uns"
+    },
+    "footer": {
+      "title": "Bereit für Premium-Transport?",
+      "subtitle": "Buchen Sie Ihren Mercedes Transporter noch heute und genießen Sie Luxus-Transport in Hamburg"
     }
   },
-  "booking": {
-    "title": "Buchung",
-    "step1": "Datum & Zeit",
-    "step2": "Optionen",
-    "step3": "Kontakt",
-    "step4": "Bestätigung",
-    "dateTime": {
-      "title": "Wählen Sie Datum und Zeit",
-      "startDate": "Startdatum",
-      "endDate": "Enddatum",
-      "startTime": "Startzeit",
-      "endTime": "Endzeit",
-      "duration": "Dauer"
+  "book": {
+    "title": "Ihren Premium Transporter buchen",
+    "subtitle": "Konfigurieren und buchen Sie Ihren Mercedes Transporter mit Premium-Optionen",
+    "vanSelection": {
+      "title": "Transporter auswählen",
+      "description": "Wählen Sie den perfekten Transporter für Ihre Umzugs- oder Transportbedürfnisse"
     },
-    "options": {
-      "title": "Zusätzliche Optionen",
-      "insurance": {
-        "title": "Versicherung",
-        "description": "Wählen Sie Ihre Versicherungsoption"
+    "duration": {
+      "title": "Mietdauer",
+      "hourly": "Stündlich",
+      "daily": "Täglich",
+      "weekly": "Wöchentlich",
+      "hourlyPrice": "€85-120",
+      "dailyPrice": "€450-600",
+      "weeklyPrice": "€2,800-3,500",
+      "hourlyDescription": "Flexibler stündlicher Verleih",
+      "dailyDescription": "24-Stunden-Mietzeitraum",
+      "weeklyDescription": "7-Tage-Mietzeitraum"
+    },
+    "insurance": {
+      "title": "Versicherungsoptionen",
+      "basic": {
+        "label": "Grundversicherung",
+        "price": "€15",
+        "period": "/Tag",
+        "description": "Standard-Schutz für Ihre Miete"
       },
-      "driver": {
-        "title": "Fahrer",
-        "description": "Professioneller Fahrer inklusive"
+      "premium": {
+        "label": "Premium-Versicherung",
+        "price": "€25",
+        "period": "/Tag",
+        "description": "Umfassender Schutz mit Pannenhilfe"
       },
-      "helper": {
-        "title": "Helfer",
-        "description": "Zusätzliche Hilfe beim Umzug"
+      "full": {
+        "label": "Vollversicherung",
+        "price": "€35",
+        "period": "/Tag",
+        "description": "Maximaler Schutz einschließlich persönlicher Gegenstände"
       }
     },
-    "contact": {
-      "title": "Kontaktdaten",
-      "name": "Name",
-      "email": "E-Mail",
-      "phone": "Telefon",
-      "pickupLocation": "Abholort",
-      "returnLocation": "Rückgabeort"
+    "services": {
+      "title": "Zusätzliche Dienstleistungen",
+      "driver": {
+        "title": "Professioneller Fahrer",
+        "description": "Lizenzierter Fahrer für Ihren Komfort",
+        "price": "€25",
+        "period": "/Stunde"
+      },
+      "helper": {
+        "title": "Umzugshelfer",
+        "description": "Zusätzliche Unterstützung bei Umzugsaufgaben",
+        "price": "€10",
+        "period": "/Person/Stunde",
+        "label": "Helfer"
+      }
+    },
+    "pickup": {
+      "title": "Abholung & Rückgabe",
+      "location": "Abholort",
+      "address": "Olewish 4, 22177 Hamburg",
+      "note": "Service nur im Hamburger Raum verfügbar"
     },
     "summary": {
       "title": "Buchungsübersicht",
@@ -124,12 +142,18 @@
       "driver": "Fahrer",
       "helper": "Helfer",
       "total": "Gesamtpreis",
-      "confirm": "Buchung bestätigen"
+      "confirm": "Buchung bestätigen",
+      "totalDescription": "Gesamtpreis mit ausgewählten Optionen"
+    },
+    "specs": {
+      "range": "Reichweite",
+      "capacity": "Kapazität",
+      "power": "Leistung"
     }
   },
   "pricing": {
-    "title": "Preise",
-    "subtitle": "Transparente und faire Preise",
+    "title": "Transparente Preise",
+    "subtitle": "Klare, wettbewerbsfähige Tarife für alle Ihre Transportbedürfnisse",
     "hourly": "Stundensatz",
     "daily": "Tagessatz",
     "weekly": "Wochensatz",
@@ -137,35 +161,68 @@
     "driver": "Fahrer",
     "helper": "Helfer"
   },
-
   "faq": {
     "title": "Häufig gestellte Fragen",
+    "subtitle": "Finden Sie Antworten auf die häufigsten Fragen zu unserem Transporter-Mietdienst",
     "questions": {
       "location": {
-        "question": "Wo kann ich den Van abholen?",
-        "answer": "Alle Vans werden in Olewish 4, 22177 Hamburg abgeholt und zurückgegeben."
+        "question": "Wo kann ich den Transporter abholen?",
+        "answer": "Alle Transporter werden in Olewish 4, 22177 Hamburg abgeholt und zurückgegeben. Wir bieten auch Lieferdienst innerhalb Hamburgs gegen Aufpreis an."
       },
       "insurance": {
-        "question": "Ist eine Versicherung im Preis inbegriffen?",
-        "answer": "Grundversicherung ist inklusive. Zusätzliche Versicherungsoptionen sind verfügbar."
+        "question": "Welche Versicherung ist inklusive?",
+        "answer": "Grundversicherung für Haftpflicht ist inklusive. Wir bieten Vollkasko-Versicherung und Geschäftsnutzung-Versicherung für zusätzlichen Schutz an."
       },
       "driver": {
-        "question": "Kann ich einen Fahrer mieten?",
-        "answer": "Ja, professionelle Fahrer sind gegen Aufpreis verfügbar."
+        "question": "Kann ich einen Fahrer mit dem Transporter mieten?",
+        "answer": "Ja, wir stellen professionelle Fahrer bereit, die Erfahrung mit Umzug und Transportdienstleistungen haben. Fahrer sind für 25€/Stunde verfügbar."
+      },
+      "moving": {
+        "question": "Stellen Sie Umzugshelfer bereit?",
+        "answer": "Ja, wir bieten Umzugshelfer für 15€/Stunde pro Person an. Sie können beim Laden, Entladen und Möbeltransport helfen."
       },
       "cancellation": {
-        "question": "Kann ich meine Buchung stornieren?",
-        "answer": "Stornierungen sind bis 24 Stunden vor Abholung kostenlos möglich."
+        "question": "Wie ist Ihre Stornierungsrichtlinie?",
+        "answer": "Kostenlose Stornierung bis 24 Stunden vor Abholung. Späte Stornierungen können mit einer Gebühr verbunden sein."
+      },
+      "delivery": {
+        "question": "Liefern Sie Transporter an andere Standorte?",
+        "answer": "Wir bedienen hauptsächlich den Hamburger Raum. Lieferung außerhalb Hamburgs kann gegen zusätzliche Gebühren verfügbar sein."
       }
+    },
+    "contact": {
+      "title": "Brauchen Sie noch Hilfe?",
+      "subtitle": "Unser Support-Team steht Ihnen bei allen Fragen und Anliegen zur Verfügung",
+      "phone": {
+        "title": "Telefon-Support",
+        "description": "Sprechen Sie direkt mit unserem Team für sofortige Unterstützung",
+        "action": "Jetzt anrufen"
+      },
+      "email": {
+        "title": "E-Mail-Support",
+        "description": "Senden Sie uns eine detaillierte Nachricht und wir antworten innerhalb von 2 Stunden",
+        "action": "E-Mail senden"
+      },
+      "chat": {
+        "title": "Live-Chat",
+        "description": "Erhalten Sie sofortige Antworten auf Ihre Fragen über den Chat",
+        "action": "Chat starten"
+      }
+    },
+    "help": {
+      "title": "Bereit loszulegen?",
+      "description": "Durchsuchen Sie unsere Transporter-Flotte oder kontaktieren Sie uns direkt, um Ihren Mietprozess zu starten",
+      "contactButton": "Kontaktieren Sie uns",
+      "browseButton": "Unsere Transporter ansehen"
     }
   },
   "contact": {
-    "title": "Kontakt",
-    "subtitle": "Wir sind für Sie da",
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Kontaktieren Sie uns für Angebote, Buchungen oder Fragen zu unseren Transporter-Mietdienstleistungen",
     "address": "Adresse",
     "phone": "Telefon",
     "email": "E-Mail",
-    "hours": "Öffnungszeiten",
+    "hours": "Geschäftszeiten",
     "form": {
       "name": "Name",
       "email": "E-Mail",
@@ -191,8 +248,8 @@
     "perWeek": "/ Woche"
   },
   "errors": {
-    "location": "Nur in Hamburg verfügbar",
-    "locationMessage": "Der Service ist nur in Hamburg verfügbar. Bitte wählen Sie einen Hamburger Standort.",
+    "location": "Service nur in Hamburg verfügbar",
+    "locationMessage": "Unser Transporter-Mietdienst ist derzeit nur in Hamburg verfügbar. Bitte wählen Sie einen Hamburger Standort oder kontaktieren Sie uns für alternative Arrangements.",
     "vehicleNotFound": "Fahrzeug nicht gefunden",
     "bookingError": "Fehler bei der Buchung",
     "required": "Dieses Feld ist erforderlich",

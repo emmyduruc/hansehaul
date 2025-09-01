@@ -141,10 +141,10 @@ export default function TransportersPage() {
             transition={{ duration: 1 }}
           >
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-8 tracking-tight">
-              Our Premium Transporters
+              {t('transporters.hero.title')}
             </h1>
             <p className="text-xl sm:text-2xl lg:text-3xl text-white mb-12 max-w-4xl mx-auto font-light leading-relaxed">
-              Experience luxury and innovation with our Mercedes van fleet. Each vehicle is designed to deliver the ultimate in comfort, performance, and sustainability.
+              {t('transporters.hero.subtitle')}
             </p>
             
             {/* Tesla Style CTA */}
@@ -156,7 +156,7 @@ export default function TransportersPage() {
                 onClick={() => document.getElementById('transporters-grid')?.scrollIntoView({ behavior: 'smooth' })}
                 className="inline-flex items-center px-12 py-4 bg-text text-background font-medium rounded-none text-lg hover:bg-text-secondary transition-colors duration-300"
               >
-                Explore Fleet
+                {t('transporters.hero.cta')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
             </motion.div>
@@ -175,10 +175,10 @@ export default function TransportersPage() {
             className="text-center mb-20"
           >
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text mb-6">
-              Choose Your Perfect Van
+              {t('transporters.grid.title')}
             </h2>
             <p className="text-xl lg:text-2xl text-text-secondary max-w-4xl mx-auto font-light">
-              From electric to hybrid, each van offers unique features and capabilities
+              {t('transporters.grid.subtitle')}
             </p>
           </motion.div>
 
@@ -291,25 +291,25 @@ export default function TransportersPage() {
                     <div className="grid grid-cols-2 gap-6 mb-8">
                       <div className="text-center p-4 bg-background-secondary rounded-lg">
                         <div className="text-2xl font-bold text-text">{transporter.specs.range}</div>
-                        <div className="text-sm text-text-secondary">Range</div>
+                        <div className="text-sm text-text-secondary">{t('transporters.specs.range')}</div>
                       </div>
                       <div className="text-center p-4 bg-background-secondary rounded-lg">
                         <div className="text-2xl font-bold text-text">{transporter.specs.capacity}</div>
-                        <div className="text-sm text-text-secondary">Capacity</div>
+                        <div className="text-sm text-text-secondary">{t('transporters.specs.capacity')}</div>
                       </div>
                       <div className="text-center p-4 bg-background-secondary rounded-lg">
                         <div className="text-2xl font-bold text-text">{transporter.specs.power}</div>
-                        <div className="text-sm text-text-secondary">Power</div>
+                        <div className="text-sm text-text-secondary">{t('transporters.specs.power')}</div>
                       </div>
                       <div className="text-center p-4 bg-background-secondary rounded-lg">
                         <div className="text-2xl font-bold text-text">{transporter.specs.acceleration}</div>
-                        <div className="text-sm text-text-secondary">Acceleration</div>
+                        <div className="text-sm text-text-secondary">{t('transporters.specs.acceleration')}</div>
                       </div>
                     </div>
 
                     {/* Features */}
                     <div className="mb-8">
-                      <h4 className="text-lg font-semibold text-text mb-4">Key Features</h4>
+                      <h4 className="text-lg font-semibold text-text mb-4">{t('transporters.sections.keyFeatures')}</h4>
                       <div className="flex flex-wrap gap-2">
                         {transporter.features.map((feature, featureIndex) => (
                           <span
@@ -324,7 +324,7 @@ export default function TransportersPage() {
 
                     {/* Highlights */}
                     <div className="mb-8">
-                      <h4 className="text-lg font-semibold text-text mb-4">Highlights</h4>
+                      <h4 className="text-lg font-semibold text-text mb-4">{t('transporters.sections.highlights')}</h4>
                       <ul className="space-y-2">
                         {transporter.highlights.map((highlight, highlightIndex) => (
                           <li key={highlightIndex} className="flex items-start">
@@ -344,7 +344,7 @@ export default function TransportersPage() {
                         onClick={() => handleVanSelect(transporter.id)}
                         className="w-full px-8 py-4 bg-text text-background font-semibold rounded-none text-lg hover:bg-text-secondary transition-colors duration-300"
                       >
-                        Book This Van
+                        {t('transporters.cta.bookVan')}
                         <ArrowRight className="ml-2 w-5 h-5 inline" />
                       </button>
                     </motion.div>
@@ -366,24 +366,24 @@ export default function TransportersPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text mb-8">
-              Ready to Experience Premium Transportation?
+              {t('transporters.footer.title')}
             </h2>
             <p className="text-xl lg:text-2xl text-text-secondary mb-12 max-w-3xl mx-auto font-light">
-              Book your Mercedes van today and enjoy luxury transportation in Hamburg
+              {t('transporters.footer.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/book"
                 className="inline-flex items-center px-12 py-4 bg-text text-background font-medium rounded-none text-lg hover:bg-text-secondary transition-colors duration-300"
               >
-                Book Now
+                {t('transporters.cta.bookNow')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center px-12 py-4 bg-transparent text-text border-2 border-text rounded-none text-lg hover:bg-text hover:text-background transition-all duration-300"
               >
-                Contact Us
+                {t('transporters.cta.contactUs')}
               </Link>
             </div>
           </motion.div>

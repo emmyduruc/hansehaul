@@ -1,119 +1,137 @@
 {
   "navigation": {
     "home": "Home",
-    "transporters": "Transporters",
+    "transporters": "Vans",
     "book": "Book",
     "faq": "FAQ",
     "contact": "Contact"
   },
   "home": {
     "hero": {
-      "title": "Premium Van Rental in Hamburg",
-      "subtitle": "Experience luxury and comfort with our Mercedes van fleet. Premium van rental service with electric and hybrid options.",
-      "cta": "Browse Fleet",
-      "secondaryCta": "View Pricing",
-      "scroll": "Scroll to explore"
+      "title": "Professional Van Rental for Moving & Transport",
+      "subtitle": "Reliable, spacious vans for your moving needs, deliveries, and transport services in Hamburg. Fast, affordable, and professional.",
+      "cta": "View Our Vans",
+      "secondaryCta": "Get Quote"
     },
-    "features": {
-      "title": "Why Choose HanseHaul",
-      "subtitle": "Premium Mercedes vans with cutting-edge technology and luxury comfort",
-      "premium": {
-        "title": "Premium Quality",
-        "description": "Only the finest Mercedes vans with luxury interiors and cutting-edge technology."
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Simple, transparent process from booking to completion",
+      "step1": {
+        "title": "Book Your Van",
+        "description": "Choose your van, select dates, and add any additional services like drivers or helpers"
       },
-      "electric": {
-        "title": "Electric & Hybrid",
-        "description": "Environmentally conscious with zero-emission electric and efficient hybrid options."
+      "step2": {
+        "title": "Pickup & Setup",
+        "description": "Collect your van at our Hamburg location with full briefing and equipment check"
       },
-      "service": {
-        "title": "24/7 Service",
-        "description": "Round-the-clock support and flexible booking options for your convenience."
+      "step3": {
+        "title": "Complete Your Task",
+        "description": "Use the van for your moving, delivery, or transport needs with full support"
       },
-      "location": {
-        "title": "Hamburg Based",
-        "description": "Convenient pickup and delivery throughout Hamburg with premium service."
-      }
+      "step4": {
+        "title": "Return & Done",
+        "description": "Return the van and we handle all the paperwork and finalization"
+      },
+      "cta": "Start Your Booking"
     },
     "cta": {
-      "title": "Ready for Your Next Journey?",
-      "description": "Book now your premium van and experience luxury on wheels",
+      "title": "Ready to Move?",
+      "description": "Get instant pricing and book your van today. Professional service guaranteed.",
       "primaryButton": "Book Now",
       "secondaryButton": "Contact Us"
     }
   },
-  "booking": {
-    "title": "Book Your Van",
-    "subtitle": "Configure and book your Mercedes van with premium options",
-    "vanSelection": "Select Your Van",
-    "duration": "Rental Duration",
-    "insurance": "Insurance Options",
-    "additionalServices": "Additional Services",
-    "driver": "Professional Driver",
-    "helpers": "Moving Helpers",
-    "bookNow": "Book Now",
-    "totalPrice": "Total price with selected options",
-    "pickupLocation": "Olewish 4, 22177 Hamburg"
-  },
-  "vehicle": {
-    "details": {
-      "title": "Vehicle Details",
-      "specifications": "Specifications",
-      "features": "Features",
-      "pricing": "Pricing",
-      "availability": "Availability"
+  "transporters": {
+    "hero": {
+      "title": "Our Premium Transporters",
+      "subtitle": "Experience luxury and innovation with our Mercedes van fleet. Each vehicle is designed to deliver the ultimate in comfort, performance, and sustainability.",
+      "cta": "Explore Fleet"
+    },
+    "grid": {
+      "title": "Choose Your Perfect Van",
+      "subtitle": "From electric to hybrid, each van offers unique features and capabilities"
     },
     "specs": {
-      "length": "Length",
-      "width": "Width",
-      "height": "Height",
-      "weight": "Weight",
-      "engine": "Engine",
+      "range": "Range",
+      "capacity": "Capacity",
       "power": "Power",
-      "range": "Range"
+      "acceleration": "Acceleration"
     },
-    "pricing": {
-      "title": "Pricing",
-      "hourly": "Hourly Rate",
-      "daily": "Daily Rate",
-      "weekly": "Weekly Rate"
+    "sections": {
+      "keyFeatures": "Key Features",
+      "highlights": "Highlights"
+    },
+    "cta": {
+      "bookVan": "Book This Van",
+      "bookNow": "Book Now",
+      "contactUs": "Contact Us"
+    },
+    "footer": {
+      "title": "Ready to Experience Premium Transportation?",
+      "subtitle": "Book your Mercedes van today and enjoy luxury transportation in Hamburg"
     }
   },
-  "booking": {
-    "title": "Booking",
-    "step1": "Date & Time",
-    "step2": "Options",
-    "step3": "Contact",
-    "step4": "Confirmation",
-    "dateTime": {
-      "title": "Select Date and Time",
-      "startDate": "Start Date",
-      "endDate": "End Date",
-      "startTime": "Start Time",
-      "endTime": "End Time",
-      "duration": "Duration"
+  "book": {
+    "title": "Book Your Premium Van",
+    "subtitle": "Configure and book your Mercedes van with premium options",
+    "vanSelection": {
+      "title": "Select Your Van",
+      "description": "Choose the perfect van for your moving or transport needs"
     },
-    "options": {
-      "title": "Additional Options",
-      "insurance": {
-        "title": "Insurance",
-        "description": "Choose your insurance option"
+    "duration": {
+      "title": "Rental Duration",
+      "hourly": "Hourly",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "hourlyPrice": "€85-120",
+      "dailyPrice": "€450-600",
+      "weeklyPrice": "€2,800-3,500",
+      "hourlyDescription": "Flexible hourly rental",
+      "dailyDescription": "24-hour rental period",
+      "weeklyDescription": "7-day rental period"
+    },
+    "insurance": {
+      "title": "Insurance Options",
+      "basic": {
+        "label": "Basic Coverage",
+        "price": "€15",
+        "period": "/day",
+        "description": "Standard protection for your rental"
       },
-      "driver": {
-        "title": "Driver",
-        "description": "Professional driver included"
+      "premium": {
+        "label": "Premium Coverage",
+        "price": "€25",
+        "period": "/day",
+        "description": "Comprehensive protection with roadside assistance"
       },
-      "helper": {
-        "title": "Helper",
-        "description": "Additional help for moving"
+      "full": {
+        "label": "Full Coverage",
+        "price": "€35",
+        "period": "/day",
+        "description": "Maximum protection including personal items"
       }
     },
-    "contact": {
-      "title": "Contact Information",
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "pickupLocation": "Pickup Location",
-      "returnLocation": "Return Location"
+    "services": {
+      "title": "Additional Services",
+      "driver": {
+        "title": "Professional Driver",
+        "description": "Licensed driver for your convenience",
+        "price": "€25",
+        "period": "/hour"
+      },
+      "helper": {
+        "title": "Moving Helpers",
+        "description": "Additional assistance for moving tasks",
+        "price": "€10",
+        "period": "/person/hour",
+        "label": "helpers"
+      }
+    },
+    "pickup": {
+      "title": "Pickup & Return",
+      "location": "Pickup Location",
+      "address": "Olewish 4, 22177 Hamburg",
+      "note": "Service available only in Hamburg area"
     },
     "summary": {
       "title": "Booking Summary",
@@ -124,12 +142,18 @@
       "driver": "Driver",
       "helper": "Helper",
       "total": "Total Price",
-      "confirm": "Confirm Booking"
+      "confirm": "Confirm Booking",
+      "totalDescription": "Total price with selected options"
+    },
+    "specs": {
+      "range": "Range",
+      "capacity": "Capacity",
+      "power": "Power"
     }
   },
   "pricing": {
-    "title": "Pricing",
-    "subtitle": "Transparent and fair pricing",
+    "title": "Transparent Pricing",
+    "subtitle": "Clear, competitive rates for all your transport needs",
     "hourly": "Hourly Rate",
     "daily": "Daily Rate",
     "weekly": "Weekly Rate",
@@ -137,35 +161,68 @@
     "driver": "Driver",
     "helper": "Helper"
   },
-
   "faq": {
     "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions about our van rental service",
     "questions": {
       "location": {
         "question": "Where can I pick up the van?",
-        "answer": "All vans are picked up and returned at Olewish 4, 22177 Hamburg."
+        "answer": "All vans are picked up and returned at Olewish 4, 22177 Hamburg. We also offer delivery service within Hamburg for an additional fee."
       },
       "insurance": {
-        "question": "Is insurance included in the price?",
-        "answer": "Basic insurance is included. Additional insurance options are available."
+        "question": "What insurance is included?",
+        "answer": "Basic third-party liability insurance is included. We offer comprehensive coverage and business use insurance for additional protection."
       },
       "driver": {
-        "question": "Can I rent a driver?",
-        "answer": "Yes, professional drivers are available for an additional fee."
+        "question": "Can I rent a driver with the van?",
+        "answer": "Yes, we provide professional drivers experienced in moving and transport services. Drivers are available at €25/hour."
+      },
+      "moving": {
+        "question": "Do you provide moving helpers?",
+        "answer": "Yes, we offer moving helpers at €15/hour per person. They can assist with loading, unloading, and furniture moving."
       },
       "cancellation": {
-        "question": "Can I cancel my booking?",
-        "answer": "Cancellations are free up to 24 hours before pickup."
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation up to 24 hours before pickup. Late cancellations may incur a fee."
+      },
+      "delivery": {
+        "question": "Do you deliver vans to other locations?",
+        "answer": "We primarily serve Hamburg area. Delivery outside Hamburg may be available for additional fees."
       }
+    },
+    "contact": {
+      "title": "Still Need Help?",
+      "subtitle": "Our support team is here to help you with any questions or concerns",
+      "phone": {
+        "title": "Phone Support",
+        "description": "Speak directly with our team for immediate assistance",
+        "action": "Call Now"
+      },
+      "email": {
+        "title": "Email Support",
+        "description": "Send us a detailed message and we'll respond within 2 hours",
+        "action": "Send Email"
+      },
+      "chat": {
+        "title": "Live Chat",
+        "description": "Get instant answers to your questions via chat",
+        "action": "Start Chat"
+      }
+    },
+    "help": {
+      "title": "Ready to Get Started?",
+      "description": "Browse our van fleet or contact us directly to start your rental process",
+      "contactButton": "Contact Us",
+      "browseButton": "View Our Vans"
     }
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "We are here for you",
+    "title": "Contact Us",
+    "subtitle": "Get in touch for quotes, bookings, or questions about our van rental services",
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
-    "hours": "Opening Hours",
+    "hours": "Business Hours",
     "form": {
       "name": "Name",
       "email": "Email",
@@ -191,8 +248,8 @@
     "perWeek": "/ week"
   },
   "errors": {
-    "location": "Only available in Hamburg",
-    "locationMessage": "Service is only available in Hamburg. Please select a Hamburg location.",
+    "location": "Service only available in Hamburg",
+    "locationMessage": "Our van rental service is currently only available in Hamburg. Please select a Hamburg location or contact us for alternative arrangements.",
     "vehicleNotFound": "Vehicle not found",
     "bookingError": "Booking error",
     "required": "This field is required",
