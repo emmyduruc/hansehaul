@@ -48,7 +48,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Link
-                  href="/book"
+                  href="/transporters"
                   className="inline-flex items-center px-12 py-4 bg-text text-background font-medium rounded-none text-lg hover:bg-text-secondary transition-colors duration-300"
                 >
                   {t('home.hero.cta')}
@@ -60,7 +60,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Link
-                  href="/book"
+                  href="/transporters"
                   className="inline-flex items-center px-12 py-4 bg-transparent text-text border-2 border-text rounded-none text-lg hover:bg-text hover:text-background transition-all duration-300"
                 >
                   {t('home.hero.secondaryCta')}
@@ -98,10 +98,10 @@ export default function HomePage() {
             className="text-center"
           >
             <Link
-              href="/book"
+              href="/transporters"
               className="inline-flex items-center px-12 py-4 bg-text text-background font-medium rounded-none text-lg hover:bg-text-secondary transition-colors duration-300"
             >
-              Book Your Van
+              View Our Fleet
               <ChevronRight className="ml-2 w-5 h-5" />
             </Link>
           </motion.div>
@@ -125,7 +125,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
-                href="/fleet"
+                href="/transporters"
                 className="inline-flex items-center px-12 py-4 bg-text text-background font-medium rounded-none text-lg hover:bg-text-secondary transition-colors duration-300"
               >
                 {t('home.cta.primaryButton')}

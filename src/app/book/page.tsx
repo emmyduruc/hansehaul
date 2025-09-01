@@ -2,25 +2,45 @@
 
 import { useTranslations } from '@/lib/translations';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star, Calendar, MapPin, Users, Shield, Zap } from 'lucide-react';
+import { ArrowRight, Check, Star, Calendar, MapPin, Users, Shield, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 export default function BookPage() {
   const { t } = useTranslations();
+  const searchParams = useSearchParams();
   const [selectedVan, setSelectedVan] = useState('sprinter');
   const [selectedDuration, setSelectedDuration] = useState('daily');
   const [selectedInsurance, setSelectedInsurance] = useState('basic');
   const [selectedDriver, setSelectedDriver] = useState(false);
   const [selectedHelpers, setSelectedHelpers] = useState(0);
+  const [carouselState, setCarouselState] = useState(0);
+
+  const updateCarousel = (newIndex: number) => {
+    setCarouselState(newIndex);
+  };
+
+  // Handle URL parameter for preselected van
+  useEffect(() => {
+    const vanParam = searchParams.get('van');
+    if (vanParam && ['sprinter', 'vito', 'vclass'].includes(vanParam)) {
+      setSelectedVan(vanParam);
+    }
+  }, [searchParams]);
 
   const vans = [
     {
       id: 'sprinter',
       name: 'Mercedes Sprinter',
       model: 'Premium Van',
-      image: 'https://megamobil-wohnmobile.de/wp-content/uploads/11-9.webp',
+      images: [
+        'https://megamobil-wohnmobile.de/wp-content/uploads/11-9.webp',
+        'https://picsum.photos/1200/800?random=201',
+        'https://picsum.photos/1200/800?random=202',
+        'https://picsum.photos/1200/800?random=203'
+      ],
       price: '€85',
       period: '/h',
       features: ['Electric', '9 Seats', 'Premium Interior', 'Panoramic Roof'],
@@ -35,7 +55,12 @@ export default function BookPage() {
       id: 'vito',
       name: 'Mercedes Vito',
       model: 'Luxury Van',
-      image: 'https://picsum.photos/1200/800?random=102',
+      images: [
+        'https://picsum.photos/1200/800?random=102',
+        'https://picsum.photos/1200/800?random=204',
+        'https://picsum.photos/1200/800?random=205',
+        'https://picsum.photos/1200/800?random=206'
+      ],
       price: '€95',
       period: '/h',
       features: ['Hybrid', '8 Seats', 'Panoramic Roof', 'Massage Seats'],
@@ -50,7 +75,12 @@ export default function BookPage() {
       id: 'vclass',
       name: 'Mercedes V-Class',
       model: 'Executive Van',
-      image: 'https://picsum.photos/1200/800?random=103',
+      images: [
+        'https://picsum.photos/1200/800?random=103',
+        'https://picsum.photos/1200/800?random=207',
+        'https://picsum.photos/1200/800?random=208',
+        'https://picsum.photos/1200/800?random=209'
+      ],
       price: '€120',
       period: '/h',
       features: ['Electric', '7 Seats', 'Massage Seats', 'Executive Interior'],
@@ -122,12 +152,62 @@ export default function BookPage() {
                 className="sticky top-8"
               >
                 <div className="relative h-96 lg:h-[500px] overflow-hidden bg-background-secondary rounded-lg">
-                  <Image
-                    src={selectedVanData?.image || ''}
-                    alt={selectedVanData?.name || 'Premium Van'}
-                    fill
-                    className="object-cover"
-                  />
+                  {/* Carousel Images */}
+                  <div className="relative w-full h-full">
+                    {selectedVanData?.images.map((image, imageIndex) => (
+                      <motion.div
+                        key={imageIndex}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: imageIndex === carouselState ? 1 : 0 }}
+                        transition={{ duration: 0.5 }}
+                        className={`absolute inset-0 ${imageIndex === carouselState ? 'z-10' : 'z-0'}`}
+                      >
+                        <Image
+                          src={image}
+                          alt={`${selectedVanData?.name} - Image ${imageIndex + 1}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+
+                  {/* Carousel Navigation */}
+                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between items-center px-4 z-20">
+                    <button
+                      onClick={() => {
+                        const currentIndex = carouselState;
+                        const prevIndex = currentIndex <= 0 ? (selectedVanData?.images.length || 1) - 1 : currentIndex - 1;
+                        updateCarousel(prevIndex);
+                      }}
+                      className="w-12 h-12 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center text-text hover:bg-background transition-all duration-300 hover:scale-110"
+                    >
+                      <ChevronLeft className="w-6 h-6" />
+                    </button>
+                    <button
+                      onClick={() => {
+                        const currentIndex = carouselState;
+                        const nextIndex = currentIndex >= (selectedVanData?.images.length || 1) - 1 ? 0 : currentIndex + 1;
+                        updateCarousel(nextIndex);
+                      }}
+                      className="w-12 h-12 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center text-text hover:bg-background transition-all duration-300 hover:scale-110"
+                    >
+                      <ChevronRight className="w-6 h-6" />
+                    </button>
+                  </div>
+
+                  {/* Image Indicators */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+                    {selectedVanData?.images.map((_, imageIndex) => (
+                      <button
+                        key={imageIndex}
+                        onClick={() => updateCarousel(imageIndex)}
+                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                          imageIndex === carouselState ? 'bg-accent' : 'bg-background/60'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
                 
                 {/* Van Specs */}

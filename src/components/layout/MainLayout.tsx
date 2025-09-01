@@ -19,8 +19,8 @@ export default function MainLayout({ children }: MainLayoutProps) {
 
   const navigation = [
     { name: t('navigation.home'), href: '/' },
+    { name: t('navigation.transporters'), href: '/transporters' },
     { name: t('navigation.book'), href: '/book' },
-    { name: t('navigation.rentals'), href: '/rentals' },
     { name: t('navigation.faq'), href: '/faq' },
     { name: t('navigation.contact'), href: '/contact' },
   ];

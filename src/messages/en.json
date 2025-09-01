@@ -1,8 +1,8 @@
 {
   "navigation": {
     "home": "Home",
+    "transporters": "Transporters",
     "book": "Book",
-    "rentals": "Rentals",
     "faq": "FAQ",
     "contact": "Contact"
   },
@@ -50,7 +50,9 @@
     "additionalServices": "Additional Services",
     "driver": "Professional Driver",
     "helpers": "Moving Helpers",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "totalPrice": "Total price with selected options",
+    "pickupLocation": "Olewish 4, 22177 Hamburg"
   },
   "vehicle": {
     "details": {
@@ -135,14 +137,7 @@
     "driver": "Driver",
     "helper": "Helper"
   },
-  "rentals": {
-    "hamburg": {
-      "title": "Rentals in Hamburg",
-      "subtitle": "Premium van service in all Hamburg districts",
-      "districts": "Districts",
-      "pickupAddress": "Pickup Address: Olewish 4, 22177 Hamburg"
-    }
-  },
+
   "faq": {
     "title": "Frequently Asked Questions",
     "questions": {
