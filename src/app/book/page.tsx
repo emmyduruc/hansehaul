@@ -1,12 +1,13 @@
 'use client';
 
 import { useTranslations } from '@/lib/translations';
-import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star, Calendar, MapPin, Users, Shield, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Check, Star, Calendar, MapPin, Users, Shield, Zap, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
+import CalendarComponent from '@/components/Calendar';
 
 export default function BookPage() {
   const { t } = useTranslations();
@@ -17,9 +18,43 @@ export default function BookPage() {
   const [selectedDriver, setSelectedDriver] = useState(false);
   const [selectedHelpers, setSelectedHelpers] = useState(0);
   const [carouselState, setCarouselState] = useState(0);
+  const [pickupDate, setPickupDate] = useState<Date | null>(null);
+  const [returnDate, setReturnDate] = useState<Date | null>(null);
+  const [validationError, setValidationError] = useState<string | null>(null);
 
   const updateCarousel = (newIndex: number) => {
     setCarouselState(newIndex);
+  };
+
+  const handleBooking = () => {
+    if (!pickupDate) {
+      setValidationError('Pickup date is required');
+      return;
+    }
+    
+    if (!returnDate) {
+      setValidationError('Return date is required');
+      return;
+    }
+    
+    if (returnDate <= pickupDate) {
+      setValidationError('Return date must be after pickup date');
+      return;
+    }
+    
+    // Clear any previous validation errors
+    setValidationError(null);
+    
+    // Here you would typically submit the booking
+    console.log('Booking submitted:', {
+      van: selectedVan,
+      pickupDate,
+      returnDate,
+      duration: selectedDuration,
+      insurance: selectedInsurance,
+      driver: selectedDriver,
+      helpers: selectedHelpers
+    });
   };
 
   // Handle URL parameter for preselected van
@@ -143,8 +178,9 @@ export default function BookPage() {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Left Side - Van Display */}
-            <div className="relative">
+            {/* Left Side - Van Display and Calendar */}
+            <div className="space-y-8">
+              {/* Van Display */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -239,6 +275,21 @@ export default function BookPage() {
                     ))}
                   </div>
                 </div>
+              </motion.div>
+
+              {/* Calendar Component */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              >
+                <CalendarComponent
+                  pickupDate={pickupDate}
+                  returnDate={returnDate}
+                  onPickupDateChange={setPickupDate}
+                  onReturnDateChange={setReturnDate}
+                  onValidationError={setValidationError}
+                />
               </motion.div>
             </div>
 
@@ -438,6 +489,28 @@ export default function BookPage() {
         </div>
       </section>
 
+      {/* Validation Error Display */}
+      <AnimatePresence>
+        {validationError && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            className="fixed bottom-32 left-1/2 transform -translate-x-1/2 z-40 bg-accent-error text-background px-6 py-3 rounded-lg shadow-lg"
+          >
+            <div className="flex items-center space-x-2">
+              <span className="font-medium">{validationError}</span>
+              <button
+                onClick={() => setValidationError(null)}
+                className="ml-2 text-background/80 hover:text-background transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Fixed Footer - Tesla Style */}
       <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-background-tertiary z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -464,7 +537,10 @@ export default function BookPage() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <button className="px-12 py-4 bg-accent text-background font-semibold rounded-none text-lg hover:bg-accent/90 transition-colors duration-300">
+              <button 
+                onClick={handleBooking}
+                className="px-12 py-4 bg-accent text-background font-semibold rounded-none text-lg hover:bg-accent/90 transition-colors duration-300"
+              >
                 {t('book.summary.confirm')}
                 <ArrowRight className="ml-2 w-5 h-5 inline" />
               </button>

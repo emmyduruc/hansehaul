@@ -90,6 +90,44 @@
       "dailyDescription": "24-Stunden-Mietzeitraum",
       "weeklyDescription": "7-Tage-Mietzeitraum"
     },
+    "calendar": {
+      "title": "Wählen Sie Ihre Termine",
+      "subtitle": "Wählen Sie Abhol- und Rückgabedaten für Ihre Miete",
+      "pickupDate": "Abholdatum",
+      "returnDate": "Rückgabedatum",
+      "selectDate": "Datum auswählen",
+      "invalidDate": "Bitte wählen Sie ein gültiges Datum",
+      "dateRequired": "Datum muss ausgewählt werden",
+      "pickupRequired": "Abholdatum ist erforderlich",
+      "returnRequired": "Rückgabedatum ist erforderlich",
+      "invalidRange": "Rückgabedatum muss nach dem Abholdatum liegen",
+      "bookedOut": "Ausgebucht",
+      "available": "Verfügbar",
+      "today": "Heute",
+      "months": {
+        "january": "Januar",
+        "february": "Februar",
+        "march": "März",
+        "april": "April",
+        "may": "Mai",
+        "june": "Juni",
+        "july": "Juli",
+        "august": "August",
+        "september": "September",
+        "october": "Oktober",
+        "november": "November",
+        "december": "Dezember"
+      },
+      "weekdays": {
+        "monday": "Mo",
+        "tuesday": "Di",
+        "wednesday": "Mi",
+        "thursday": "Do",
+        "friday": "Fr",
+        "saturday": "Sa",
+        "sunday": "So"
+      }
+    },
     "insurance": {
       "title": "Versicherungsoptionen",
       "basic": {

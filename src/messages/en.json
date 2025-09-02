@@ -90,6 +90,44 @@
       "dailyDescription": "24-hour rental period",
       "weeklyDescription": "7-day rental period"
     },
+    "calendar": {
+      "title": "Select Your Dates",
+      "subtitle": "Choose pickup and return dates for your rental",
+      "pickupDate": "Pickup Date",
+      "returnDate": "Return Date",
+      "selectDate": "Select Date",
+      "invalidDate": "Please select a valid date",
+      "dateRequired": "Date must be selected",
+      "pickupRequired": "Pickup date is required",
+      "returnRequired": "Return date is required",
+      "invalidRange": "Return date must be after pickup date",
+      "bookedOut": "Booked Out",
+      "available": "Available",
+      "today": "Today",
+      "months": {
+        "january": "January",
+        "february": "February",
+        "march": "March",
+        "april": "April",
+        "may": "May",
+        "june": "June",
+        "july": "July",
+        "august": "August",
+        "september": "September",
+        "october": "October",
+        "november": "November",
+        "december": "December"
+      },
+      "weekdays": {
+        "monday": "Mon",
+        "tuesday": "Tue",
+        "wednesday": "Wed",
+        "thursday": "Thu",
+        "friday": "Fri",
+        "saturday": "Sat",
+        "sunday": "Sun"
+      }
+    },
     "insurance": {
       "title": "Insurance Options",
       "basic": {
